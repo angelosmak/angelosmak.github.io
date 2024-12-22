@@ -1043,4 +1043,8 @@ a {
     max-width: 300px;
     margin-bottom: 20px;
   }
+
+  .margin-top-10 {
+    margin-top: 22%;
+  }
 }

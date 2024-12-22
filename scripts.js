@@ -28,11 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   if (navigation) {
-    console.log("Navigation element found.");
     window.addEventListener('scroll', function () {
       if (window.scrollY > 0) {
         navigation.classList.add('nav-scrolled');
-        console.log(navigation);
       } else {
         navigation.classList.remove('nav-scrolled');
       }
@@ -40,4 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Navigation element not found. Check your HTML structure.");
   }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector("#menuToggle input");
+  const navMenu = document.querySelector("#menu");
+
+  menuToggle.addEventListener("change", function () {
+    if (menuToggle.checked) {
+      navMenu.style.display = "block";
+    } else {
+      navMenu.style.display = "none";
+    }
+  });
 });
