@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Aelia Corfu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker CSS -->
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/ecacb31776.js" crossorigin="anonymous"></script>
+
+    <script>function openTab(tabId) {
+      // Hide all tab content
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Remove 'active' class from all buttons
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(button => button.classList.remove('active'));
+
+      // Show the selected tab and set the active button
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`.tab-button[onclick="openTab('${tabId}')"]`).classList.add('active');
+    }</script>
+  </head>
+  <body>
+
+  <!-- -------------NAVBAR DESKTOP---------------- -->
+    <div class="navigation-wrap">
+      <div class="navigation w-nav" role="banner">
+        <div class="navigation-container">
+          <div class="navigation-left">
+            <a href="/" aria-current="page" class="brand w-nav-brand w--current" aria-label="home">
+              <img src="../assets/logo.png" alt="" class="logo logo-nav">
+            </a>
+          </div>
+          <nav role="navigation" class="nav-menu w-nav-menu">
+            <a href="./" class="navigation-link w-nav-link">Home</a>
+            <a href="./about-us.html" class="navigation-link w-nav-link">About us</a>
+            <a href="./travel-info.html" class="navigation-link w-nav-link">Travel info</a>
+            <a href="./contact.html" class="navigation-link w-nav-link">Contact</a>
+          </nav>
+          <div class="navigation-right">
+            <a href="https://www.booking.com/hotel/gr/aelia-villa-corfu.el.html?aid=304142&label=gen173nr-1BCAsoXEIRYWVsaWEtdmlsbGEtY29yZnVIM1gEaFyIAQKYAQi4ARjIARHYAQHoAQGIAgGoAgS4Ao6alLQGwAIB0gIkYzU0YWUxNjgtNGEwMi00OTQxLTliNDgtYmJjOTljOWM5NDgy2AIF4AIB-Share-bb5IiS%401719995695" target="_blank" class="button see-through w-button">BOOK NOW</a>
+          </div>
+
+
+          <!-- ---------HAMBURGER MENU--------- -->
+          <div class="hamburger-menu">
+            <div id="menuToggle">
+
+              <input type="checkbox" />
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <ul id="menu">
+                <a href="./"><li>Home</li></a>
+                <a href="/about-us.html"><li>About</li></a>
+                <a href="/travel-info.html"><li>Info</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  <!-- ------------CONTAINER------------- -->
+  <div class="container margin-top-10">
+    <h1>Explore Saint George</h1>
+    <p>Discover the best activities, food, attractions, and shopping destinations in northern Corfu, Saint George.</p>
+
+    <!-- Tabs Navigation -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab('activities')">Activities</button>
+      <button class="tab-button" onclick="openTab('food')">Food</button>
+      <button class="tab-button" onclick="openTab('places')">Places to See</button>
+      <button class="tab-button" onclick="openTab('shopping')">Shopping</button>
+    </div>
+
+    <!-- Tabs Content -->
+    <div id="activities" class="tab-content active">
+      <h2>Activities</h2>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1560364897-91578ff41817?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Scuba" class="card-image">
+        <h3>Scuba Diving</h3>
+        <p>Discover the vibrant marine life of Corfu's crystal-clear waters.</p>
+        <a href="https://www.google.com/maps/dir//Corfu+Diving+Fun+Club+,+Corfu+snorkeling+trips,shop,+diving+equipment,boat+rental,+Ag.+Georgios,+Agios+Georgios+Pagon,+Pagi+490+81/@39.7210126,19.6620294,15z/data=!4m18!1m8!3m7!1s0x135b5194b71d4179:0x6d46c27c816b4c3e!2sCorfu+Diving+Fun+Club+,+Corfu+snorkeling+trips,shop,+diving+equipment,boat+rental!8m2!3d39.7210007!4d19.6755413!15sChBzbm9ya2VsaW5nIENvcmZ1WhIiEHNub3JrZWxpbmcgY29yZnWSARFzY3ViYV90b3VyX2FnZW5jeZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSd2NGQlFlRkozRUFF4AEA-gEECAAQRw!16s%2Fg%2F1td1xmjk!4m8!1m0!1m5!1m1!1s0x135b5194b71d4179:0x6d46c27c816b4c3e!2m2!1d19.6755411!2d39.7210122!3e3?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="button">Directions</a>
+      </div>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1553623451-e80b096d386a?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hiking" class="card-image">
+        <h3>Hiking</h3>
+        <p>Explore scenic trails with breathtaking views of the island.</p>
+        <a href="https://www.google.com/maps/search/hiking+trails+Corfu" target="_blank" class="button">Directions</a>
+      </div>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1517217004452-4ff260cb5598?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJvYXQlMjB0cmlwcyUyMGNvcmZ1fGVufDB8fDB8fHww" alt="Boat Trips" class="card-image">
+        <h3>Boat Trips</h3>
+        <p>Enjoy a day on the sea, visiting hidden coves and beaches.</p>
+        <a href="https://www.google.com/maps/search/boat+docks+Corfu" target="_blank" class="button">Directions</a>
+      </div>
+    </div>
+
+    <div id="food" class="tab-content">
+      <h2>Food</h2>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1626200926749-cccc3d2caf12?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Taverna Nikolas" class="card-image">
+        <h3>Taverna Nikolas</h3>
+        <p>Authentic Greek cuisine with stunning seaside views.</p>
+        <a href="https://www.google.com/maps/place/Taverna+Nikolas" target="_blank" class="button">Directions</a>
+      </div>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1598110750624-207050c4f28c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Baklava Bakery" class="card-image">
+        <h3>Baklava Bakery</h3>
+        <p>Delicious, freshly baked Greek pastries.</p>
+        <a href="https://www.google.com/maps/place/Baklava+Bakery" target="_blank" class="button">Directions</a>
+      </div>
+    </div>
+
+    <div id="places" class="tab-content">
+      <h2>Places to See</h2>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1541929490391-c158bdb0e273?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Old Fortress" class="card-image">
+        <h3>Old Fortress</h3>
+        <p>Historic Venetian fortress with panoramic views of Corfu.</p>
+        <a href="https://www.google.com/maps/place/Old+Fortress" target="_blank" class="button">Directions</a>
+      </div>
+      <div class="info-card">
+        <img src="https://plus.unsplash.com/premium_photo-1661927459496-754b4215ff06?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paleokastritsa Monastery" class="card-image">
+        <h3>Paleokastritsa Monastery</h3>
+        <p>A beautiful monastery perched above the sea.</p>
+        <a href="https://www.google.com/maps/place/Paleokastritsa+Monastery" target="_blank" class="button">Directions</a>
+      </div>
+    </div>
+
+    <div id="shopping" class="tab-content">
+      <h2>Shopping</h2>
+      <div class="info-card">
+        <img src="https://images.unsplash.com/photo-1642495595882-9a4f09bea85b?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z3JlZWslMjBtYXJrZXR8ZW58MHx8MHx8fDA%3D" alt="Corfu Market" class="card-image">
+        <h3>Corfu Market</h3>
+        <p>Explore vibrant stalls offering local produce and souvenirs.</p>
+        <a href="https://www.google.com/maps/place/Corfu+Market" target="_blank" class="button">Directions</a>
+      </div>
+      <div class="info-card">
+        <img src="https://plus.unsplash.com/premium_photo-1679809447076-78b169ace3a6?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Artisan Shop" class="card-image">
+        <h3>Artisan Shop</h3>
+        <p>Handcrafted items made by local artisans.</p>
+        <a href="https://www.google.com/maps/place/Artisan+Shop+Corfu" target="_blank" class="button">Directions</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------FOOTER--------------- -->
+  <div class="footer-01">
+      <div class="container">
+        <div class="w-layout-grid footer-grid-01">
+          <div id="w-node-_3788c197-c0a2-a4c4-6a37-e5a7809fe26e-809fe26b" class="footer-column">
+            <img src="./assets/logo.png" class="logo" loading="lazy" width="231" alt="" class="image-4">
+          </div>
+          <div class="footer-column">
+            <a href="/about-us.html" class="footer-link">ABOUT US</a>
+            <a href="https://www.booking.com/hotel/gr/miltiadis-apartments-agios-georgios-pagon.el.html" target="_blank" class="footer-link">MILTIADIS APPARTMENTS</a>
+          </div>
+          <div class="footer-column">
+            <a href="/travel-info.html" class="footer-link">TRAVEL INFO</a>
+            <a href="/contact.html" class="footer-link">CONTACT</a>
+            <a href="https://www.booking.com/hotel/gr/aelia-villa-corfu.el.html?aid=304142&label=gen173nr-1BCAsoXEIRYWVsaWEtdmlsbGEtY29yZnVIM1gEaFyIAQKYAQi4ARjIARHYAQHoAQGIAgGoAgS4Ao6alLQGwAIB0gIkYzU0YWUxNjgtNGEwMi00OTQxLTliNDgtYmJjOTljOWM5NDgy2AIF4AIB-Share-bb5IiS%401719995695" target="_blank" class="button footer-button w-button">BOOK NOW</a>
+          </div>
+          <div id="w-node-_3788c197-c0a2-a4c4-6a37-e5a7809fe282-809fe26b" class="footer-column"></div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-wrapper">
+            <a href="#" class="footer-link small">© Villa Aelia <span id="currentYear"></span></a>
+              <a href="#" class="footer-link small">Privacy Policy</a>
+              <a href="#" class="footer-link small">Disclaimer</a>
+          </div>
+          <div class="footer-wrapper" >
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-airbnb"></i></a>
+            </div>
+            <a href="#" target="_blank" class="footer-link small mco">Made by Angelos Makris</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="scripts.js"></script>
+  </body>
+</html>
